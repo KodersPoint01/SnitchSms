@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">SnitchSms</string>
+
+
+    <string name="contact">Contacts</string>
+    <string name="call_log">Call Logs</string>
+    <string name="emergency">Emergency Calls</string>
+    <string name="emergency_number">Emergency Numbers</string>
+    <string name="internet_speed">Internet Test Speed</string>
+    <string name="fake">Fake Call</string>
+    <string name="alert_setting">Alert Setting</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="test">Test</string>
+    <string name="blink_speed">blink speed</string>
+    <string name="number_locator">Number Locator</string>
+    <string name="country_code">Country Code</string>
+    <string name="internet_speed_test">Internet Speed Tester</string>
+    <string name="phone_info">Phone Info</string>
+    <string name="clap_phone">Whistle To Find Phone</string>
+    <string name="system_info">System Info</string>
+    <string name="device_info">Device Info</string>
+    <string name="data_usage">Data Usage</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="accept">Accept</string>
+    <string name="unknown">UnKnown</string>
+    <string name="exist_app">Are You Want To Exist This App</string>
+    <string name="remove_ads">Remove Ads</string>
+    <string name="more_apps">More Apps</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="share">Share</string>
+    <string name="feedback">Feedback</string>
+    <string name="mobile_number_locator">Number Locator</string>
+    <string name="mobile_number_map">Search Number Map</string>
+    <string name="mobile_number">Search Number </string>
+    <string name="detail_number">Detail Number </string>
+    <string name="disclaimer">Disclaimer </string>
+    <string name="disclaimer_desc">This App will not show the actual callers location.All location information is state level only.We are not storing or sharing users sensitive data on the device, and it will not be misused in any case. </string>
+    <string name="rewarded_desc">Watch Ad to Continue</string>
+    <string name="record_audio_request_permission_title">Record audio permission</string>
+    <string name="record_audio_request_permission_message">Permission to record audio is needed for this app</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ok">ok</string>
+    <string name="no">no</string>
+
+</resources>

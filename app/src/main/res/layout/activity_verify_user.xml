@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.VerifyUserActivity">
+
+    <TextView
+        android:id="@+id/tvHeading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="OTP Verification"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHeading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:text="We will send you an One Time Password\non this mobile number"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeading1" />
+
+    <EditText
+        android:id="@+id/countryCode"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:hint="+92"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="@+id/idEdtPhoneNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/idEdtPhoneNumber" />
+
+    <EditText
+        android:id="@+id/idEdtPhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@null"
+        android:hint="Enter your phone"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/tvHeading2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/countryCode"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeading2" />
+
+    <Button
+        android:id="@+id/idBtnGetOtp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtPhoneNumber"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Get OTP"
+        android:backgroundTint="@color/blue"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/idEdtPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/countryCode"
+        app:layout_constraintTop_toBottomOf="@+id/idEdtPhoneNumber" />
+
+    <EditText
+        android:id="@+id/idEdtOtp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBtnGetOtp"
+        android:layout_margin="10dp"
+        android:hint="Enter OTP"
+        android:inputType="phone"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/idBtnGetOtp"
+        app:layout_constraintStart_toStartOf="@+id/idBtnGetOtp"
+        app:layout_constraintTop_toBottomOf="@+id/idBtnGetOtp" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:progressTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/idEdtPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/countryCode"
+        app:layout_constraintTop_toBottomOf="@+id/idEdtPhoneNumber" />
+    <!--button for verifying user OTP-->
+    <Button
+        android:id="@+id/idBtnVerify"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtOtp"
+        android:text="Verify OTP"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/blue"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/idBtnGetOtp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/idBtnGetOtp"
+        app:layout_constraintTop_toBottomOf="@+id/idEdtOtp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/idBtnVerify"
+        app:layout_constraintStart_toStartOf="@+id/idBtnVerify"
+        app:layout_constraintTop_toBottomOf="@+id/idBtnVerify" />
+</androidx.constraintlayout.widget.ConstraintLayout>
